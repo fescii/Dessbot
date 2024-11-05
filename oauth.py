@@ -7,6 +7,7 @@ import os
 app = Flask(__name__)
 app.secret_key = os.environ.get("FLASK_SECRET_KEY", "default_secret")  # Ensure to set a secret key
 
+#this is hard bro,hehehe
 # Function to generate a random string for the state parameter
 def generate_random_string(length=16):
     return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
